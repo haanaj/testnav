@@ -18,6 +18,7 @@
         </label>
 
         <div class="trigger">
+          <!-- The code below is from https://learn.cloudcannon.com/jekyll/simple-navigation/ which I got from the thread linked in the Readme.md file -->
             {% assign navigation_pages = site.pages | sort: 'weight' %}
             {% for p in navigation_pages %}
               {% if p.weight %}
