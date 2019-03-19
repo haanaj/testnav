@@ -20,7 +20,7 @@
         <div class="trigger">
             {% assign navigation_pages = site.pages | sort: 'weight' %}
             {% for p in navigation_pages %}
-              {% if p.navigation_weight %}
+              {% if p.weight %}
                 {% if p.title %}
                 <a class="page-link" href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
                 {% endif %}
